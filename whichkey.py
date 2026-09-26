@@ -214,9 +214,10 @@ def format_card_markup(chord_name, entries, colors):
 class WhichKeyHUD:
     """Manages the zero-latency Which-Key HUD overlay inside Qtile."""
 
-    def __init__(self, colors, qtile_instance=None):
+    def __init__(self, colors, qtile_instance=None, fontsize=14):
         self._qtile = qtile_instance
         self.colors = colors
+        self.fontsize = fontsize
         self.popup = None
         self.timer_handle = None
 
@@ -239,18 +240,18 @@ class WhichKeyHUD:
             entries = extract_entries(q, chord_name)
             markup_text = format_card_markup(chord_name, entries, self.colors)
 
-            pad_x = 16
-            pad_y = 12
+            pad_x = 18
+            pad_y = 14
 
             # Initial dummy popup to accurately measure text dimensions
             p = Popup(
                 q,
                 x=0,
                 y=0,
-                width=600,
-                height=400,
+                width=800,
+                height=600,
                 font="JetBrainsMono Nerd Font",
-                fontsize=11,
+                fontsize=self.fontsize,
                 background=self.colors.get("bg", "#130626"),
                 border=self.colors.get("active", "#e542a3"),
                 border_width=1,
@@ -303,9 +304,9 @@ class WhichKeyHUD:
             self.popup = None
 
 
-def setup_whichkey(colors, qtile_instance=None):
+def setup_whichkey(colors, qtile_instance=None, fontsize=14):
     """Installs the Which-Key hooks into Qtile."""
-    hud = WhichKeyHUD(colors, qtile_instance)
+    hud = WhichKeyHUD(colors, qtile_instance, fontsize=fontsize)
 
     @hook.subscribe.enter_chord
     def on_enter_chord(chord_name):
