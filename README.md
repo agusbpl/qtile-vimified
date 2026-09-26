@@ -99,14 +99,14 @@ Press `ALT + <Key>` to enter a modal submap. The Which-Key HUD will immediately 
 | `ALT + F` | **🖥️ Frames** | **Unified Window Management:** Fullscreen (`f`), Float/Tile (`t`), Split (`s`), Sticky (`p`), Normalize (`n`), Next Layout (`m`), Close (`w`), Toggle Bar (`b`) |
 | `ALT + E` | **🗂️ Workspaces** | **Workspace Jump & Window Move:** Jump to 1..10, Move window to 1..10 (`SHIFT + 1..10`), Next workspace (`TAB`) |
 | `ALT + D` | **📐 Resize / Dimensions** | Modal micro-adjustments (**D**imensions: `h`/`l` width, `j`/`k` height, `n` normalize) |
-| `ALT + S` | **⚙️ System & Hardware** | Ranger (`f`), PCManFM (`F`), Btop (`m`), Edit Qtile (`e`), Network (`n`), Bluetooth (`b`), Camera (`c`), Record video (`r`), Screenshot (`s`), Shutdown (`q`), Volume (`v`), Brightness (`b`/`l`) |
-| `ALT + P` | **💻 Programming & Dev** | Antigravity AI (`a`), Zed (`e`), Terminal (`t`), JupyterLab (`j`), LazyGit (`g`), GitHub Web (`G`), Google Colab (`c`), Discord (`d`) |
+| `ALT + S` | **⚙️ System & Hardware** | Ranger (`f`), PCManFM (`F`), LocalSend (`l`), Btop (`m`), Fastfetch (`i`), Edit Qtile (`e`), Rofi (`Space`), Network (`n`), Network GUI (`N`), Bluetooth (`B`), Printer (`P`), Camera (`c`), Record video (`r`), Record + Camera (`R`), Screenshot (`s`), ARandR Display (`d`), Pavucontrol (`V`), Shutdown (`q`), Volume (`v`), Brightness (`b`) |
+| `ALT + P` | **💻 Programming & Dev** | Antigravity AI (`a`), Zed (`e`), Neovim (`v`), Terminal (`t`), IPython (`i`), JupyterLab (`j`), SQLite Browser GUI (`s`), LazyGit (`g`), GitHub Web (`G`), Google Colab (`c`), Discord (`d`) |
 | `ALT + L` | **📚 Learning & Data** | Python, Pandas, Polars, PyTorch, Scikit-Learn, Hugging Face, SQL, PostgreSQL, Airflow, Metabase, local cheatsheets |
-| `ALT + O` | **📝 Office & Documents** | Obsidian notes (`n`), OnlyOffice (`o`), Docs (`d`), Sheets (`s`), Okular/Zathura PDF (`p`/`z`), DeepL (`t`), WordReference (`w`), Wikipedia (`W`), Excalidraw (`e`) |
+| `ALT + O` | **📝 Office & Documents** | Obsidian notes (`n`), OnlyOffice (`o`), SC-IM spreadsheet (`S`), Qalculate (`c`), Docs (`d`), Sheets (`s`), Okular/Zathura PDF (`p`/`z`), DeepL (`t`), WordReference (`w`), Wikipedia (`W`), Excalidraw (`e`) |
 | `ALT + I` | **🤖 AI & Assistants** | Brain (`b`), Gemini (`a`), Claude (`c`), ChatGPT (`g`), Perplexity (`p`), DeepSeek (`d`), Mistral (`m`), Kimi (`k`), NotebookLM (`n`), OpenCode (`o`), Grok (`x`), Phind (`f`) |
 | `ALT + U` | **🎓 UNLP Universidad** | AU24 (`a`), LINTI (`l`), IDEAS (`i`), mfi - info (`m`) |
-| `ALT + N` | **🌐 Navigation & Web** | Browser (`b`), YouTube (`y`), YouTube Studio (`s`), Telegram (`t`), WhatsApp Web (`w`), Gmail (`m`) |
-| `ALT + M` | **🎵 Media Player** | Play/Pause (`Space`), Next track (`l`), Previous track (`h`), Volume (`k`/`j`), Mute (`m`), cmus Player (`c`) |
+| `ALT + N` | **🌐 Navigation & Web** | Browser (`b`), WhatsApp Web (`w`), YouTube (`y`), YouTube Studio (`s`), Telegram (`t`) |
+| `ALT + M` | **🎵 Media Player** | Play/Pause (`Space`), Next track (`l`), Previous track (`h`), Volume (`k`/`j`), Mute (`m`), cmus Player (`c`), MPV Video Player (`v`), Pavucontrol Mixer (`p`) |
 | `ALT + T` | **🗣️ Text to Speech** | Piper TTS Spanish (`p`), Piper TTS English (`e`) |
 
 ---

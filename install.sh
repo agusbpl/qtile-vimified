@@ -12,10 +12,16 @@ echo -e "\033[1;34m:: Installing qtile-vimified...\033[0m"
 
 mkdir -p "$QTILE_CONF_DIR"
 
-# 1. Install whichkey.py
+# 1. Install whichkey.py and default theme.py
 echo "-> Deploying whichkey.py to $QTILE_CONF_DIR..."
 cp "$DIR/whichkey.py" "$QTILE_CONF_DIR/whichkey.py"
 echo -e "\033[32m✔ whichkey.py deployed.\033[0m"
+
+if [ ! -f "$QTILE_CONF_DIR/theme.py" ]; then
+  echo "-> Deploying theme.py to $QTILE_CONF_DIR..."
+  cp "$DIR/theme.py" "$QTILE_CONF_DIR/theme.py"
+  echo -e "\033[32m✔ theme.py deployed.\033[0m"
+fi
 
 # 2. Reload Qtile if running
 if pgrep -x qtile >/dev/null 2>&1; then
